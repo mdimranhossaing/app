@@ -237,27 +237,16 @@ body.registration {
 
 .registration .links .form-check {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 5px;
-}
-
-.registration .links .form-check:first-child {
-  margin-bottom: 5px;
 }
 
 .registration .links .form-check label {
   font-size: 0.8em;
-}
-
-.registration .links .form-check label::first-letter {
-  text-transform: capitalize;
+  margin-top: -3px;
 }
 
 .registration .links .form-check label a {
   text-decoration: none;
   color: #00ACEE;
-}
-
-.registration .links .form-check label a::first-letter {
-  text-transform: capitalize;
 }
