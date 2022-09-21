@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
   <title>App</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="login">
 
   <div class="container">
@@ -15,20 +17,33 @@
       <h2 class="title">sign in</h2>
 
       <form action="#">
-        <input class="field" type="email" name="email" placeholder="Enter your email">
-        <input class="field" type="password" name="password" placeholder="Enter new password">
+        <div class="field">
+          <input class="input-field" type="email" name="email" placeholder="Enter your email">
+          <div class="error">Insert valid email</div>
+        </div>
+
+        <div class="field">
+          <input class="input-field" type="password" name="password" placeholder="Enter new password">
+          <div class="error">Password not match</div>
+        </div>
+
+
         <div class="keep-and-link">
           <div class="keep">
             <input type="checkbox" name="keep" id="keep">
             <label for="keep">remember me</label>
           </div>
-          <a class="link" href="#">forgot password?</a>
+
+          <div class="link">
+              <a href="#">forgot password?</a>
+          </div>
         </div>
+
         <input type="submit" value="sign in">
       </form>
 
       <div class="or">or</div>
-      
+
       <div class="social-buttons">
         <ul>
           <li><a href="#"><i class="bi bi-facebook"></i></a></li>
@@ -44,6 +59,7 @@
 
     </div>
   </div>
-  
+
 </body>
+
 </html>

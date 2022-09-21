@@ -9,6 +9,31 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 100vh;
+}
+
+th,
+td {
+  white-space: nowrap;
+}
+
+.table {
+  box-shadow: 0 5px 10px rgba(0,0,0, 0.3);
+}
+
+.create-user-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.create-user form {
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 20px 20px rgba(0,0,0, 0.3);
+  max-width: 320px;
+}
+
 body.login,
 body.registration {
   display: flex;
@@ -18,6 +43,12 @@ body.registration {
   background-repeat: no-repeat;
   height: 100vh;
   font-family: 'Poppins', sans-serif;
+}
+
+.main {
+  background: linear-gradient(135deg, #8145FF, #5530EF);
+  background-repeat: no-repeat;
+  height: 90vh;
 }
 
 .inner-box {
@@ -38,32 +69,39 @@ body.registration {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
-  flex-wrap: wrap;
 }
 
 .inner-box form .field {
   margin-bottom: 20px;
+}
+
+.inner-box form .field .input-field {
   border-radius: 50px;
   padding: 10px 20px;
   border: 1px solid #ccc;
+  width: 100%;
+}
+
+.inner-box form .field .error {
+  display: none;
+  font-size: 0.8em;
+  margin-top: 5px;
+  margin-left: 10px;
+  font-weight: 500;
+  color:rgb(245, 108, 98)
 }
 
 .inner-box form .keep-and-link {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
-  flex-wrap: wrap;
 }
 
 .inner-box form .keep-and-link .keep {
   display: flex;
   align-items: center;
   gap: 5px;
-}
-
-.inner-box form .keep-and-link .keep #keep {
-  color: red;
-  background-color: red;
 }
 
 .inner-box form .keep-and-link .keep label {
@@ -73,7 +111,7 @@ body.registration {
   cursor: pointer;
 }
 
-.inner-box form .keep-and-link .link {
+.inner-box form .keep-and-link .link a {
   text-decoration: none;
   font-size: 0.8em;
   color: #777;
@@ -185,23 +223,41 @@ body.registration {
   font-weight: 500;
 }
 
-.registration .inner-box form .keep-and-link .keep label {
-  font-size: 0.7em;
+/* login area end */
+
+/* registration area start */
+
+.registration .inner-box {
+  max-width: 320px;
+}
+
+.registration .links {
+  margin-bottom: 20px;
+}
+
+.registration .links .form-check {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.registration .links .form-check:first-child {
+  margin-bottom: 5px;
+}
+
+.registration .links .form-check label {
+  font-size: 0.8em;
+}
+
+.registration .links .form-check label::first-letter {
   text-transform: capitalize;
-  font-weight: 500;
-  cursor: pointer;
-  margin-right: 5px;
 }
 
-.registration .inner-box form .keep-and-link span {
-  font-size: 0.7em;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.registration .inner-box form .keep-and-link .link {
+.registration .links .form-check label a {
   text-decoration: none;
-  font-size: 0.7em;
-  color: #399DFF;
+  color: #00ACEE;
+}
+
+.registration .links .form-check label a::first-letter {
   text-transform: capitalize;
 }

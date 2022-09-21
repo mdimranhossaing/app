@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
   <title>App</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="registration">
 
   <div class="container">
@@ -15,19 +17,46 @@
       <h2 class="title">sign up</h2>
 
       <form action="#">
-        <input class="field" type="username" name="username" placeholder="Enter your username">
-        <input class="field" type="email" name="email" placeholder="Enter your email">
-        <input class="field" type="password" name="password" placeholder="Enter new password">
-        <input class="field" type="password" name="confirm_password" placeholder="Enter confirm password">
-        <div class="keep-and-link">
-          <div class="keep">
-            <input type="checkbox" name="keep" id="keep">
+
+        <div class="field">
+          <input class="input-field" type="username" name="username" placeholder="Enter your username">
+          <div class="error">Insert valid username</div>
+        </div>
+
+        <div class="field">
+          <input class="input-field" type="email" name="email" placeholder="Enter your email">
+          <div class="error">Insert valid email</div>
+        </div>
+
+        <div class="field">
+          <input class="input-field" type="password" name="password" placeholder="Enter new password">
+          <div class="error">Insert valid password</div>
+        </div>
+
+        <div class="field">
+          <input class="input-field" type="password" name="confirm_password" placeholder="Enter confirm password">
+          <div class="error">Password not match</div>
+        </div>
+
+
+        <div class="links">
+
+          <div class="form-check">
+            <input type="checkbox" name="keep" id="keep" checked>
             <label for="keep">by signign up you accept the</label>
           </div>
-          <a class="link" href="#">term of service</a>
-          <span>and</span>
-          <a class="link" href="#">privecy policy</a>
+
+          <div class="form-check">
+            <input type="checkbox" name="privacy" id="privacy" checked>
+            <label for="privacy">
+              <a href="#">term of service</a>
+              <span>and</span>
+              <a href="#">privecy policy</a>
+            </label>
+          </div>
+
         </div>
+
         <input type="submit" value="sign up">
       </form>
 
@@ -38,6 +67,7 @@
 
     </div>
   </div>
-  
+
 </body>
+
 </html>
